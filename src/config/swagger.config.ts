@@ -7,6 +7,7 @@ export const setupSwagger = (app: INestApplication) => {
     .setDescription('API Redis Demo')
     .setVersion('1.0')
     .addTag('Redis')
+    .addBearerAuth()
     .build();
 
   const document = SwaggerModule.createDocument(app, options);
